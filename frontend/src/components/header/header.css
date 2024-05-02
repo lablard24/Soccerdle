@@ -1,0 +1,29 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; /* Adjust the z-index as needed */
+}
+
+.container {
+  padding: 10px;
+}
+
+/* Adjust margin to create space between navbar and content */
+.content {
+  margin-top: 120px; /*Adjust this value as needed */
+  padding-top: 1px;
+}
+
+.navbarBrand {
+  font-size: 25px;
+  font-weight: normal;
+}

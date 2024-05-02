@@ -1,0 +1,80 @@
+/* CSS for modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    /* Fade-in animation */
+    z-index: 999;
+    backdrop-filter: blur(1px);
+}
+
+/* CSS for modal content */
+.modal-content {
+    color: white;
+    background-color: rgba(33, 37, 41, 0.98);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-60px);
+    /* Start off-screen */
+    transition: transform 3s ease-in-out;
+    /* Slide-in animation */
+    z-index: 1000;
+}
+
+.modal-content button {
+    width: 100%;
+    /* Set button width to 100% of its container */
+    max-width: 200px;
+    /* Set maximum button width if needed */
+    padding: 10px;
+    background-color: #efeee9;
+    color: #000; 
+    cursor: pointer; 
+    border: 2px solid #000000;
+    min-width: 6vw;
+    border-radius: 8px;
+}
+
+/* CSS for modal overlay when visible */
+.modal-overlay.visible {
+    opacity: 1;
+}
+
+/* CSS for modal content when visible */
+.modal-content.visible {
+    transform: translateY(-20px);
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  .shake {
+    animation: shake 0.1s; /* You can change the duration here */
+  }

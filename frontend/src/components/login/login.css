@@ -1,0 +1,65 @@
+   body {
+    background-image: url('wallpaper3.jpg');
+    background-size: cover;
+    background-position: center;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    
+  }
+  
+  .login-container {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    margin-top: 200px;
+    max-width: 400px;
+    padding: 30px;
+    background-color: rgba(33,37,41, 0.87);
+    color: white;    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    
+  }
+
+  .login-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: calc(100% - 20px);
+  background-color: rgba(85, 85, 85, 0.6); 
+  color: white; 
+}
+    
+  .login-container form > div {
+    display: block;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+    
+  .login-container label {
+    padding-top: 5px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+  }
+    
+  .login-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: calc(100% - 20px);
+  }
+    
+  .login-container button {
+    padding: 8px 20px;
+  }
+    
+  .login-container button:hover {
+    background-color: #088f16;
+  }
+  
